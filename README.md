@@ -24,8 +24,8 @@ The application works with built-in defaults. To override them, create `.env.loc
 ```dotenv
 DATABASE_PATH=./data/prototype.db
 BUSINESS_TIMEZONE=America/New_York
-TERESA_NAME=Teresa
-TERESA_EMAIL=teresa@example.com
+TERESA_NAME=Project Manager
+TERESA_EMAIL=project-manager@example.com
 ```
 
 No form URL, Google credentials, login credentials, scheduler secret, or email-provider settings are required.
@@ -36,7 +36,7 @@ No form URL, Google credentials, login credentials, scheduler secret, or email-p
 
 - Four intake-compatible school projects with contact and request details, including one unavailable-hours state
 - Three virtual webmasters with name and email
-- Teresa's simulated sender identity
+- The Project Manager's simulated sender identity
 - Read-only mock used and remaining hours
 - Kickoff and closing dates with all five automatic workflows enabled
 - Nine global subject/body templates
@@ -55,7 +55,7 @@ Select a seeded school to:
 - Set kickoff and closing dates
 - Enable or disable the five automatic workflows
 - Submit all automation settings and recalculate future dates
-- Extend the closing date manually and simulate Teresa's extension email
+- Extend the closing date manually and simulate the Project Manager's extension email
 - Review immutable simulated sends in the school's Sent Emails section
 
 Six-week and two-week reminder dates are derived from closing. A zero remaining-hours value triggers the used-hours sequence once.
@@ -64,15 +64,15 @@ Six-week and two-week reminder dates are derived from closing. A zero remaining-
 
 The Emails area stores one shared configuration used by every school. It contains nine fixed-sender templates:
 
-1. Teresa kickoff
+1. Project Manager kickoff
 2. VWM kickoff follow-up
-3. Teresa six-week reminder
-4. Teresa two-week reminder
+3. Project Manager six-week reminder
+4. Project Manager two-week reminder
 5. VWM closing
-6. Teresa closing follow-up
+6. Project Manager closing follow-up
 7. VWM hours-used message
-8. Teresa hours-used follow-up
-9. Teresa extension
+8. Project Manager hours-used follow-up
+9. Project Manager extension
 
 Each editor lists its supported `{{variable}}` values. Unsupported variables are rejected. Template changes affect future simulations but do not alter existing Sent Emails snapshots.
 
@@ -107,7 +107,7 @@ No network delivery occurs and no mail transport exists in the application.
 4. Open Emails, show the nine shared templates and template-specific variables, then save an edit.
 5. Open VWMs and demonstrate the reusable assignment directory.
 6. Run the simulation endpoint and return to a school to inspect Sent Emails.
-7. Extend a project and show the revised closing date plus Teresa's immutable extension record.
+7. Extend a project and show the revised closing date plus the Project Manager's immutable extension record.
 
 ## Data Commands
 
