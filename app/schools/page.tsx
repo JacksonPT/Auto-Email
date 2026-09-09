@@ -97,12 +97,7 @@ export default async function SchoolsPage({ searchParams }: PageProps) {
     <div className="page-shell schools-page">
       <div className="page-intro">
         <div>
-          <p className="eyebrow">School workspace</p>
-          <h1>Every project, on its own clock.</h1>
-          <p className="lede">
-            Assign the team, set two dates, and let the shared email sequence
-            take it from there.
-          </p>
+          <h1>Projects</h1>
         </div>
         <div className="metric-strip" aria-label="Project summary">
           <span>
@@ -134,7 +129,6 @@ export default async function SchoolsPage({ searchParams }: PageProps) {
         <div>
           <p className="eyebrow">Selected project</p>
           <h2>{school.name}</h2>
-          <p>{school.requestDetails}</p>
         </div>
         <div className="hours-card" aria-label="Read-only prototype hours">
           <span>Mock sheet hours</span>
@@ -162,8 +156,7 @@ export default async function SchoolsPage({ searchParams }: PageProps) {
           <section className="panel automation-panel">
             <div className="panel-header">
               <div>
-                <p className="eyebrow">Automation settings</p>
-                <h2>Set the project rhythm</h2>
+                <h2>Email Settings</h2>
               </div>
               <CalendarDays aria-hidden="true" />
             </div>
@@ -250,7 +243,6 @@ export default async function SchoolsPage({ searchParams }: PageProps) {
               <form action={extendProjectAction} className="extension-form">
                 <input name="schoolId" type="hidden" value={school.id} />
                 <div>
-                  <p className="eyebrow">Manual extension</p>
                   <h3>Move the close date</h3>
                   <p>The reminder schedule will follow the new date.</p>
                 </div>

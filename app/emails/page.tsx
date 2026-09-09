@@ -25,12 +25,7 @@ export default async function EmailsPage({ searchParams }: PageProps) {
     <div className="page-shell emails-page">
       <div className="page-intro">
         <div>
-          <p className="eyebrow">Global email library</p>
-          <h1>Edit once. Use everywhere.</h1>
-          <p className="lede">
-            Nine shared templates keep every school on-message while project
-            data fills in the details.
-          </p>
+          <h1>Template Emails</h1>
         </div>
         <div className="global-callout">
           <Globe2 aria-hidden="true" size={19} />

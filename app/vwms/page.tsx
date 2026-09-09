@@ -20,12 +20,7 @@ export default async function VirtualWebmastersPage({
     <div className="page-shell vwms-page">
       <div className="page-intro">
         <div>
-          <p className="eyebrow">Virtual webmaster directory</p>
-          <h1>The people behind each project.</h1>
-          <p className="lede">
-            Maintain one reusable name and email list, then assign the right VWM
-            from each school.
-          </p>
+          <h1>Virtual webmaster directory</h1>
         </div>
         <div className="directory-count">
           <UsersRound aria-hidden="true" />
@@ -39,7 +34,6 @@ export default async function VirtualWebmastersPage({
 
       <section className="panel add-vwm-panel">
         <div>
-          <p className="eyebrow">Add to directory</p>
           <h2>New virtual webmaster</h2>
         </div>
         <form action={addVwmAction}>
