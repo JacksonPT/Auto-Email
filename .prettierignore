@@ -1,0 +1,9 @@
+.next
+.opencode
+coverage
+data
+node_modules
+openspec
+playwright-report
+test-results
+package-lock.json
